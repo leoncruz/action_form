@@ -1,0 +1,19 @@
+require:
+  - rubocop-performance
+  - rubocop-minitest
+
+AllCops:
+  TargetRubyVersion: 2.7.6
+
+  Exclude:
+    - 'bin/*'
+    - 'tmp/*'
+    - 'test/test_helper.rb'
+    - 'test/dummy/bin/**/*'
+    - 'test/dummy/db/schema.rb'
+    - 'test/dummy/config/**/*'
+
+  NewCops: enable
+
+Metrics:
+  Enabled: false
